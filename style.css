@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Special+Elite&display=swap");
+
+:root {
+  --color-page-gradient-start: #c08841;
+  --color-page-gradient-end: #f4e5c6;
+  --color-white: #ffffff;
+  --color-text: #1f1a12;
+  --color-card-border: #4b4236;
+  --color-card-bg: rgb(244 229 198 / 0.38);
+  --color-button-bg: #b61710;
+  --color-button-bg-hover: #9f120d;
+  --color-button-border: #2c160f;
+  --font-pacifico: "Pacifico", cursive;
+  --font-typewriter: "American Typewriter", "Special Elite", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--color-text);
+  font-family: var(--font-typewriter);
+  background: linear-gradient(105deg, var(--color-page-gradient-start) 0%, var(--color-page-gradient-end) 82%, var(--color-white) 100%);
+}
+
+img {
+  max-width: 100%;
+}
+
+.site-menu {
+  min-height: 72px;
+  padding: 0 46px;
+  background: var(--color-page-gradient-end);
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+.site-logo {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.site-logo img {
+  display: block;
+  width: 92px;
+  height: auto;
+}
+
+.menu-links {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 44px;
+}
+
+.menu-links a,
+.book-button {
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: var(--font-pacifico);
+}
+
+.book-button {
+  color: var(--color-white);
+  background: var(--color-button-bg);
+  border: 2px solid var(--color-button-border);
+  border-radius: 6px;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.book-button {
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.menu-links a:hover,
+.menu-links a:focus-visible {
+  text-decoration: underline;
+}
+
+.book-button:hover,
+.book-button:focus-visible {
+  background: var(--color-button-bg-hover);
+}
+
+@media (max-width: 960px) {
+  .site-menu {
+    padding: 18px 28px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 18px 28px;
+  }
+
+  .menu-links {
+    order: 3;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    gap: 18px 28px;
+  }
+}
+
+@media (max-width: 760px) {
+  .site-logo img {
+    width: 76px;
+  }
+}

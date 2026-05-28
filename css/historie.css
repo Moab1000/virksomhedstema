@@ -1,0 +1,135 @@
+.cormorant-garamond {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: "Cormorant Garamond", serif;
+}
+
+p {
+  font-size: 1.2rem;
+  color: light-dark(#0e0e0e, #f2f2f2);
+
+  overflow-wrap: break-word;
+  hyphens: auto;
+  text-wrap: pretty;
+  max-width: 65ch;
+  font-family: "Cormorant Garamond", serif;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-family: "Cormorant Garamond", serif;
+  color: light-dark(#0e0e0e, #f2f2f2);
+}
+
+body {
+  /* push footer to bottom */
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: light-dark(#e1d1af, #414858);
+}
+
+body {
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+main {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin: 20px auto 20px;
+  padding: 20px;
+  color: var(--light-purple-color);
+
+  /* push footer to bottom */
+  flex: 1 0 auto;
+}
+
+nav {
+  background-color: var(--light-brown-color);
+
+  color: light-dark(#0e0e0e, #f2f2f2);
+}
+nav .search {
+  display: none;
+  font-size: 1.4rem;
+}
+
+nav ul li {
+  display: inline;
+}
+nav ul li input {
+  display: inline;
+}
+nav ul {
+  /* padding-inline-start: 0;*/
+  display: flex;
+
+  justify-content: center;
+  gap: 8rem;
+}
+nav a {
+  font-size: 2rem;
+  text-decoration: none;
+  font-family: "Cormorant Garamond", serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  align-items: center;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  background-color: light-dark(#739ab4, #739ab4);
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr minmax(300px, 1200px) 1fr;
+  background-color: light-dark(#6c8392, #739ab4);
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-family: "Cormorant Garamond", serif;
+}
+
+header {
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr minmax(300px, 1200px) 1fr;
+}
+
+html {
+  --primary: light-dark(#a8c7a3, #41613b);
+}
+
+h1 {
+  color: light-dark(#0e0e0e, #f2f2f2);
+}
+
+html {
+  color-scheme: light dark;
+  --color-heading: light-dark(#6c8392, #739ab4);
+  --color-text: light-dark(#0e0e0e, #f2f2f2);
+  --color-bg: light-dark(#e1d1af, #414858);
+
+  background: var(--color-bg);
+  color: var(--color-brand);
+}
+
+html.light {
+  color-scheme: light;
+}
+html.dark {
+  color-scheme: dark;
+}

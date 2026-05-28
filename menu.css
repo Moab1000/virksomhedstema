@@ -1,0 +1,268 @@
+.menu-side {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.menu-side section {
+  padding: 45px 70px;
+  margin-bottom: 40px;
+}
+
+.start-menu {
+  min-height: 78vh;
+}
+
+.to-kolonner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.menu-side h1 {
+  margin: 0 0 20px;
+  font-size: 28px;
+}
+
+.menu-side h2 {
+  margin: 0 0 25px;
+  font-size: 34px;
+}
+
+.menu-side h3 {
+  margin: 0 0 15px;
+  font-size: 24px;
+}
+
+.menu-side p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.menu-tekst p {
+  max-width: 620px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.menu-knapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  max-width: 520px;
+}
+
+.menu-knapper a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 72px;
+  padding: 0 28px;
+  color: #000000;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  border: 4px solid #000000;
+  border-radius: 999px;
+  box-shadow: 8px 10px 0 #000000;
+  white-space: nowrap;
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.mad-knap {
+  background-color: var(--color-page-gradient-start);
+}
+
+.drikke-knap {
+  background-color: var(--color-page-gradient-end);
+}
+
+.menu-knapper a:hover,
+.menu-knapper a:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 10px 14px 0 #000000;
+}
+
+.mad-knap:hover,
+.mad-knap:focus-visible {
+  background-color: #d49a4a;
+}
+
+.drikke-knap:hover,
+.drikke-knap:focus-visible {
+  background-color: #fff1d1;
+}
+
+.menu-hojre {
+  position: relative;
+  margin-left: 180px;
+}
+
+.stort-menu-kort {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+}
+
+.mad-billede {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  object-position: center center;
+  border-bottom: 1px solid var(--color-card-border);
+}
+
+.kort-tekst {
+  padding: 10px 20px 25px;
+}
+
+.kort-tekst h2 {
+  margin: 0 0 5px;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.kort-tekst p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.lille-knap {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 12px;
+  color: var(--color-white);
+  font-size: 12px;
+  text-decoration: none;
+  background-color: var(--color-button-bg);
+  border: 2px solid var(--color-button-border);
+  border-radius: 6px;
+}
+
+.tjener-billede {
+  position: absolute;
+  right: -90px;
+  bottom: -70px;
+  width: 260px;
+}
+
+.menu-kort {
+  padding: 25px;
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+}
+
+.menu-billeder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-bottom: 25px;
+}
+
+.menu-billede-kort {
+  border: 1px solid var(--color-card-border);
+}
+
+.menu-billede-kort h3 {
+  margin: 15px 20px 5px;
+  font-size: 26px;
+}
+
+.menu-billede-kort img {
+  display: block;
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.menu-billede-kort .lille-knap {
+  margin: 10px 20px 15px;
+}
+
+.retter-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px 90px;
+}
+
+.ret-kort {
+  padding: 15px 20px;
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+}
+
+.ret-kort h3 {
+  width: 130px;
+  margin: -10px auto 12px;
+  text-align: center;
+  background-color: var(--color-page-gradient-end);
+  border: 1px solid var(--color-card-border);
+  font-size: 18px;
+}
+
+.ret-kort p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.menu-billede {
+  display: block;
+  width: 100%;
+  max-height: 650px;
+  object-fit: cover;
+  border: 1px solid var(--color-card-border);
+}
+
+@media (max-width: 760px) {
+  .menu-side {
+    padding: 0;
+  }
+
+  .menu-side section {
+    padding: 35px 20px;
+  }
+
+  .to-kolonner,
+  .menu-billeder,
+  .retter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tjener-billede {
+    display: none;
+  }
+
+  .menu-knapper {
+    margin-top: 30px;
+  }
+
+  .menu-knapper a {
+    width: 100%;
+    min-height: 64px;
+    font-size: 20px;
+  }
+
+  .menu-hojre {
+    margin-left: 0;
+  }
+
+  .menu-tekst p {
+    font-size: 21px;
+  }
+
+  .menu-side h1 {
+    font-size: 25px;
+  }
+
+  .menu-side h2 {
+    font-size: 28px;
+  }
+}

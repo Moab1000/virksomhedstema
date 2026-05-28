@@ -1,0 +1,321 @@
+/************************************ Reset ************************************/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  interpolate-size: allow-keywords;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2 {
+  line-height: 1.25;
+}
+
+p,
+li {
+  text-wrap: pretty;
+}
+
+img,
+svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+label {
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  font-size: max(1em, 16px);
+}
+
+textarea {
+  resize: none;
+  min-height: 4lh;
+}
+
+legend {
+  padding: 0;
+}
+
+select,
+::picker(select) {
+  appearance: base-select;
+}
+
+/**************** Header ****************/
+/* header {
+  display: flex;
+  height: 90px;
+  align-items: center;
+  justify-content: right;
+  background-color: #f4e5c6;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin-right: 20px;
+  gap: 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  background-color: rgb(58, 58, 58);
+  margin: 5px;
+  padding: 10px;
+  border-radius: 20px;
+  color: #e09d49;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.menu li a:hover {
+  background-color: #c08841;
+  color: rgb(58, 58, 58);
+}
+
+.button {
+  margin-right: 30px;
+}
+
+.button a {
+  padding: 8px;
+  border-radius: 12px;
+  display: inline-block;
+  background-color: #bc3333;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-left: 15px;
+  transition: 0.2s;
+}
+
+.button a:hover {
+  background-color: #5b1818;
+} */
+
+/* .logo {
+  width: 400px;
+  position: fixed;
+  left: 10px;
+  margin-top: 10px;
+} */
+
+/*^******************* Header 2 ***********************/
+header {
+  padding: 25px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 7;
+
+  background-color: #efe2cf;
+
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+/* LOGO */
+
+.logo a {
+  text-decoration: none;
+
+  color: black;
+
+  font-size: 20px;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+}
+
+/* MENU */
+
+.menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.menu a {
+  text-decoration: none;
+
+  color: #222;
+
+  font-size: 12px;
+
+  letter-spacing: 1px;
+
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #b62020;
+}
+
+/* BUTTON */
+
+.button a {
+  text-decoration: none;
+
+  background: #1d7d43;
+
+  color: white;
+
+  padding: 12px 20px;
+
+  font-size: 12px;
+
+  letter-spacing: 1px;
+
+  border-radius: 4px;
+
+  transition: 0.3s;
+}
+
+.button a:hover {
+  background: #14552d;
+}
+
+.logo {
+  width: 300px;
+  position: fixed;
+  left: 10px;
+  margin-top: -85px;
+  z-index: 9;
+}
+
+/************************************ Text ************************************/
+h1 {
+  margin-top: 30px;
+  font-size: 3rem;
+  color: #b61205;
+}
+
+h2 {
+  margin-top: 15px;
+  margin-bottom: 40px;
+  margin-left: 50px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #c08841;
+}
+
+a:hover {
+  color: black;
+}
+
+/************************************ Body ************************************/
+
+body {
+  background-image: linear-gradient(to right, #c08841, #f4e5c6 90%);
+}
+
+/************************************ Main ************************************/
+
+main {
+  max-width: 1150px;
+  margin-inline: auto;
+}
+
+/************************************ Text box ************************************/
+
+.text_box {
+  max-width: 600px;
+  margin-inline: auto;
+  margin-block: 30px;
+  padding: 20px;
+  background-color: #f4e5c6;
+  border: 5px solid #c08841;
+  border-radius: 30px;
+}
+
+/************************************ image ************************************/
+
+.image1 {
+  width: 75%;
+  max-width: none;
+  margin-inline: auto;
+  position: absolute;
+  z-index: -1;
+  opacity: 70%;
+  top: 250px;
+  left: 0;
+  border-top-right-radius: 100px;
+
+  -webkit-mask-image: linear-gradient(to bottom, black 20%, transparent);
+  mask-image: linear-gradient(to bottom, black 20%, transparent);
+}
+
+.hjerte {
+  position: fixed;
+  width: 250px;
+  right: 80px;
+  top: 150px;
+}
+
+.trapets {
+  position: absolute;
+  width: 600px;
+  right: -100px;
+  top: 400px;
+  z-index: -1;
+  opacity: 50%;
+}
+
+.fadeOut {
+  animation: effekt ease-out both;
+  animation-timeline: scroll();
+  animation-range: 0 15%;
+}
+
+@keyframes effekt {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
